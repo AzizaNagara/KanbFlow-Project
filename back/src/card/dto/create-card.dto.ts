@@ -1,6 +1,6 @@
 export class CreateCardDto {
-  name: string;
   content: string;
   order: number;
+  name: string;
   swimlaneId: number;
 }

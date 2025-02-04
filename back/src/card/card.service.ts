@@ -28,7 +28,7 @@ export class CardService {
       userId,
     );
     if (!hasAccessToSwimlane) {
-      throw new UnauthorizedException('You are not a part of this board.');
+      throw new UnauthorizedException('You are not a part of the board.');
     }
     return this.cardRepository.save(card);
   }

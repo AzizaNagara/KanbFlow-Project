@@ -12,12 +12,12 @@ import {
 export class Card {
   @PrimaryGeneratedColumn()
   id: number;
+  
+  @Column()
+  content: string;
 
   @Column({ length: 100 })
   name: string;
-
-  @Column()
-  content: string;
 
   @Column()
   order: number;
