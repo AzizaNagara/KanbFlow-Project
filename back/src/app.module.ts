@@ -27,7 +27,7 @@ import { AuthGuard } from './auth/auth/auth.guard';
       password: '1234',
       database: 'trello',
       entities: [Board, Card, Swimlane, User],
-      synchronize: process.env.ENV !== 'production',
+      synchronize: true,
     }),
     AuthModule,
   ],
