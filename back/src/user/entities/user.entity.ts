@@ -37,7 +37,7 @@ export class User {
 
   @OneToMany(() => Card, (user) => user.assigne)
   cards: Card[];
-
+  #10 are salt rounds times the password will be processed during the hashing process
   @BeforeInsert()
   async hashPassword() {
     if (this.password) {
